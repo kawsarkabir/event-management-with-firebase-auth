@@ -9,9 +9,8 @@ export default {
       fontFamily:{
         barlow: "'Barlow', sans-serif"
       },
-      textColor:{
-        primaryColor: "#ce1446"
-      },
+      
+   
       
     },
   },

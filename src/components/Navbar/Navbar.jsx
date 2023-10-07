@@ -47,7 +47,7 @@ const Navbar = () => {
         <NavLink
           to="/register"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-red-700" : ""
+            isPending ? "pending" : isActive ? "text-red-500" : ""
           }
         >
           Register
@@ -57,9 +57,9 @@ const Navbar = () => {
   );
   return (
     <div className="navbar">
-      <div className="navbar-start">
+      <div className="navbar-start flex-row-reverse lg:flex-row">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden relative left-48">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -90,7 +90,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 mr-20">{navLinks}</ul>
       </div>
       <div>
-        <button className="w-[150px] bg-black h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#ce1446] before:to-[rgba(206, 20, 70, .7)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]">
+        <button className="w-[150px] bg-[#ce1446] h-[50px] my-3 flex items-center justify-center rounded font-bold  text-[#fff] hidden lg:block">
           Get Ticket
         </button>
       </div>
