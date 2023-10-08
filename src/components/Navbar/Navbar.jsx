@@ -56,10 +56,13 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar">
+    <div className="navbar max-w-screen-xl mx-auto py-0 px-10 lg:px-0">
       <div className="navbar-start flex-row-reverse lg:flex-row">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden relative left-48">
+          <label
+            tabIndex={0}
+            className="btn btn-ghost lg:hidden relative left-48"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -83,7 +86,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to={`/`}>
-          <img src="https://i.ibb.co/r2b47gm/logo.png" alt="" />
+          <img src="https://i.ibb.co/r2b47gm/logo.png" alt="logo" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex ml-auto">

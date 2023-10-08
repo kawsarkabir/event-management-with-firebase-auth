@@ -4,7 +4,7 @@ import Footer from "../pages/Footer/Footer";
 
 const Layout = () => {
   return (
-    <div className="max-w-screen-xl mx-auto mt-3 font-barlow">
+    <div className=" font-barlow">
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>

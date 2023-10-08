@@ -3,9 +3,9 @@ import {   FaProjectDiagram, FaMapPin, FaMicrophone } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <div className="hero min-h-screen">
-      <div className=" grid lg:grid-cols-3 grid-cols-1 items-center gap-5">
-        <div className="banner-content lg:col-span-2 justify-center lg:justify-normal text-center lg:text-left md:text-left">
+    <div className="hero min-h-screen banner-section">
+      <div className=" grid lg:grid-cols-3 grid-cols-1 items-center gap-5 max-w-screen-xl mx-auto">
+        <div className="banner-content lg:col-span-2 justify-center lg:justify-normal text-center lg:text-left md:text-left mt-10 lg:mt-0 md:mt-0">
           <h5 className="text-xl font-semibold color-primary">
             January 21, 2023
           </h5>
