@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer";
 const About = () => {
   return (
     <div>
@@ -12,7 +13,7 @@ const About = () => {
           <h1 className="tryphography hidden lg:block">ABOUT US</h1>
         </div>
       </div>
-      <div className="   max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         <h1 className="tryphography text-white relative hidden lg:block">
           ABOUT US
         </h1>
@@ -77,6 +78,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Priceing = () => {
           GET SPONSOR TICKET
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 justify-items-center max-w-screen-xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 justify-items-center max-w-screen-xl mx-auto px-5">
         <div className="card drop-shadow-xl">
           <div className="header">
             <span className="title">Basic</span>
