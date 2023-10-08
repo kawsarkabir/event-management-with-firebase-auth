@@ -3,12 +3,14 @@ import "./Priceing.css";
 const Priceing = () => {
   return (
     <>
-      <h4 className="color-primary text-center mt-10 font-semibold">
-        Ticket Plan
-      </h4>
-      <h1 className="lg:text-6xl md:text-5xl text-4xl text-center font-bold">
-        GET SPONSOR TICKET
-      </h1>
+      <div>
+        <h4 className="color-primary text-center mt-20 font-semibold">
+          Ticket Plan
+        </h4>
+        <h1 className="lg:text-5xl md:text-5xl text-4xl text-center font-bold">
+          GET SPONSOR TICKET
+        </h1>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 justify-items-center max-w-screen-xl mx-auto">
         <div className="card drop-shadow-xl">
           <div className="header">

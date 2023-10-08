@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className=" mt-10">
-      <footer className="footer footer-center p-10  ">
+      <footer className="footer footer-center p-10  bg-red-50">
          <img className="w-60"  src="https://i.ibb.co/r2b47gm/logo.png" alt="logo" /> 
         <p>Join our mailing list to stay up to date on all things Expotin</p>
         <div className="flex w-full justify-center flex-row">
