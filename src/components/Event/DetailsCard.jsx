@@ -4,7 +4,7 @@ import { FcCalendar } from "react-icons/fc";
 import "./DetailsCard.css";
 import PropTypes from "prop-types";
 const DetailsCard = ({ details }) => {
-  const { img, seat, publish_date, location } = details || {};
+  const { img, seat, title,  publish_date, location, description } = details || {};
   return (
     <>
       <div className="details-card-banner">
@@ -23,9 +23,9 @@ const DetailsCard = ({ details }) => {
         <h1 className="tryphography text-white relative hidden lg:block">
           EVENT DETAILS
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-1 gap-5 my-10">
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-1 gap-5 my-10 px-3">
           <div className="col-span-3 mt-5">
-            <img src={img} alt="" className="h-[70vh] w-full" />
+            <img src={img} alt="" className="lg:h-[60vh] w-full" />
             <div className="flex justify-between mt-5   border-b">
               <div className="flex items-center gap-x-3">
                 <FcCalendar></FcCalendar>
@@ -41,9 +41,60 @@ const DetailsCard = ({ details }) => {
                 <h1>{location}</h1>
               </div>
             </div>
+            <h1 className="lg:text-4xl my-5 font-bold">{title}</h1>
+            <p className="text-md leading-3">{description}</p>
           </div>
           <div>
-            <h1>from</h1>
+            <button className="btn mt-5 bg-[#ce1446] text-white px-10 py-3 rounded-md text-md font-bold">
+              {" "}
+              Book this Event
+            </button>
+            <div className="hero   ">
+              <div className="hero-content flex-col  ">
+                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                  <form className="card-body">
+                    <div className="form-control">
+                      <label className="label">
+                        <span className="label-text">Name</span>
+                      </label>
+                      <input
+                        type="name"
+                        placeholder="name"
+                        className="input input-bordered"
+                        required
+                      />
+                    </div>
+                    <div className="form-control">
+                      <label className="label">
+                        <span className="label-text">Email</span>
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="email"
+                        className="input input-bordered"
+                        required
+                      />
+                    </div>
+                    <div className="form-control">
+                      <label className="label">
+                        <span className="label-text">Password</span>
+                      </label>
+                      <input
+                        type="password"
+                        placeholder="password"
+                        className="input input-bordered"
+                        required
+                      />
+                    </div>
+                    <div className="form-control mt-6">
+                      <button className="btn bg-[#ce1446] text-white font-medium text-lg">
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
