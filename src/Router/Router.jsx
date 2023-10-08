@@ -5,31 +5,37 @@ import About from "../pages/About/About";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register.jsx/Register";
 
+import EventDetails from "../components/Event/EventDetails";
+
 const Router = createBrowserRouter([
-    {
-        path: '/', 
-        element: <Layout></Layout>, 
-        children:[
-            {
-                path: '/', 
-                element: <Home></Home>, 
-                loader: ()=>fetch('/services.json')
-                
-            }, 
-            {
-                path: '/about', 
-                element: <About></About>
-            },
-            {
-                path: '/login', 
-                element: <Login></Login>
-            },
-            {
-              path: '/register', 
-              element: <Register></Register>
-            }
-        ]
-    }
-])
+  {
+    path: "/",
+    element: <Layout></Layout>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+        loader: () => fetch("/services.json"),
+      },
+      {
+        path: "/eventDetails/:id",
+        element: <EventDetails></EventDetails>,
+        loader: ( )=> fetch("/services.json"),
+       },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+    ],
+  },
+]);
 
 export default Router;
