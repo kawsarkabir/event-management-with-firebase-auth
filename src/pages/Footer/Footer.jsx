@@ -2,13 +2,13 @@ const Footer = () => {
   return (
     <div className=" mt-10">
       <footer className="footer footer-center p-10  ">
-        <img src="https://i.ibb.co/r2b47gm/logo.png" alt="logo" />
+         <img className="w-60"  src="https://i.ibb.co/r2b47gm/logo.png" alt="logo" /> 
         <p>Join our mailing list to stay up to date on all things Expotin</p>
         <div className="flex w-full justify-center flex-row">
           <input
             type="text"
             placeholder="Subscribe"
-            className=" border-2 focus:outline-none px-4 w-1/3 py-3 rounded-r-none -mr-10"
+            className=" border-2 focus:outline-none px-4 w-full md:w-full lg:w-1/3 py-3 rounded-r-none -mr-10"
           />
           <button className="mr-9 btn rounded-l-none bg-[#ce1446] text-white hover:bg-white hover:border-red-600 hover:text-red-600 hover:border-2">
             Subscribe
