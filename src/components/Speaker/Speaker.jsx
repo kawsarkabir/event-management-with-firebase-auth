@@ -4,8 +4,8 @@ const Speaker = () => {
   return (
     <div className="max-w-screen-xl mx-auto my-20">
       <div className="text-center mb-10">
-        <h4 className="color-primary font-semibold text-xl">Schedule</h4>
-        <h1 className="title1 text-4xl font-bold lg:text-5xl">
+        <h4 className="color-primary font-semibold text-xl">Speaker</h4>
+        <h1 className="title1 text-3xl md:text-4xl font-bold lg:text-4xl">
           TALENTED SPEAKER
         </h1>
       </div>

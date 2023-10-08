@@ -4,9 +4,9 @@ import "./Schedule.css";
 
 const Schedule = () => {
   return (
-    <div className="mt-20 max-w-screen-xl mx-auto text-center">
+    <div className="mt-20 max-w-screen-xl mx-auto text-center px-5">
       <h4 className="color-primary font-semibold text-xl">Schedule</h4>
-      <h1 className="title1 text-4xl font-bold lg:text-5xl">
+      <h1 className="title1 text-3xl font-bold lg:text-4xl md:text-4xl">
         RECENT EVENT SCHEDULE
       </h1>
       {/* Events section done */}

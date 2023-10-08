@@ -7,7 +7,7 @@ const Priceing = () => {
         <h4 className="color-primary text-center mt-20 font-semibold">
           Ticket Plan
         </h4>
-        <h1 className="lg:text-5xl md:text-5xl text-4xl text-center font-bold">
+        <h1 className="lg:text-4xl md:text-4xl text-3xl text-center font-bold">
           GET SPONSOR TICKET
         </h1>
       </div>
