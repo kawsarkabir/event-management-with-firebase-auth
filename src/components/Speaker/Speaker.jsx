@@ -11,8 +11,8 @@ const Speaker = () => {
       </div>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 px-5">
         <div className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-          <div className="relative mx-4 mt-4 h-80 overflow-hidden    ">
-            <img
+          <div >
+            <img className="w-full"
               src="https://i.ibb.co/7GF2PRR/speaker-2.png"
               alt="profile-picture"
             />
@@ -28,8 +28,8 @@ const Speaker = () => {
           </div>
         </div>
         <div className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-          <div className="relative mx-4 mt-4 h-80 overflow-hidden">
-            <img
+          <div>
+          <img className="w-full"
               src="https://i.ibb.co/tM8KvqR/speaker-3.png"
               alt="profile-picture"
             />
@@ -45,8 +45,8 @@ const Speaker = () => {
           </div>
         </div>
         <div className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-          <div className="relative mx-4 mt-4 h-80 overflow-hidden ">
-            <img
+          <div>
+          <img className="w-full"
               src="https://i.ibb.co/LZ9CC3t/speaker-1.png"
               alt="profile-picture"
             />

@@ -1,10 +1,10 @@
-import { FaCheck } from 'react-icons/fa';
-
+import { FaCheck } from "react-icons/fa";
 import "./Schedule.css";
+
 
 const Schedule = () => {
   return (
-    <div className="mt-20 max-w-screen-xl mx-auto text-center p-5">
+    <div className="mt-20 max-w-screen-xl mx-auto text-center">
       <h4 className="color-primary font-semibold text-xl">Schedule</h4>
       <h1 className="title1 text-4xl font-bold lg:text-5xl">
         RECENT EVENT SCHEDULE
@@ -28,7 +28,7 @@ const Schedule = () => {
             </div>
           </div>
         </div>
-        <div className="event-details-content col-span-2 text-left ml-5 mt-3">
+        <div className="event-details-content col-span-2 text-left ml-5 px-5 mt-3">
           <h1 className="font-bold text-2xl">
             Nulla nisl tellus hendrerit nec dignissim pellentesqu posu in est
             Suspendisse bibendum.
@@ -41,14 +41,24 @@ const Schedule = () => {
           <h4 className="mt-2 font-bold text-lg color-primary">Topics:</h4>
           <div>
             <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 g-5 mt-2">
-                <li className='flex items-center gap-x-3'> <FaCheck></FaCheck> Color</li>
-                <li className='flex items-center gap-x-3'> <FaCheck></FaCheck> Allingment</li>
-                <li className='flex items-center gap-x-3'> <FaCheck></FaCheck> Graphics Design</li>
-                <li className='flex items-center gap-x-3'> <FaCheck></FaCheck> Typhography</li>
-                <li className='flex items-center gap-x-3'> <FaCheck></FaCheck> Development</li>
-                <li className='flex items-center gap-x-3'> <FaCheck></FaCheck> Web Design</li>
-                
-                
+              <li className="flex items-center gap-x-3">
+                <FaCheck></FaCheck> Color
+              </li>
+              <li className="flex items-center gap-x-3">
+                <FaCheck></FaCheck> Allingment
+              </li>
+              <li className="flex items-center gap-x-3">
+                <FaCheck></FaCheck> Graphics Design
+              </li>
+              <li className="flex items-center gap-x-3">
+                <FaCheck></FaCheck> Typhography
+              </li>
+              <li className="flex items-center gap-x-3">
+                <FaCheck></FaCheck> Development
+              </li>
+              <li className="flex items-center gap-x-3">
+                <FaCheck></FaCheck> Web Design
+              </li>
             </ul>
           </div>
         </div>
