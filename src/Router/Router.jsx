@@ -7,11 +7,14 @@ import Register from "../pages/Register.jsx/Register";
 
 import EventDetails from "../components/Event/EventDetails";
 import PrivateRoutes from "./PrivateRoutes";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Profile from "../components/Profile/Profile";
 
 const Router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement: <ErrorPage/>,
     children: [
       {
         path: "/",
@@ -35,6 +38,10 @@ const Router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
+      {
+        path: '/profile',
+        element: <PrivateRoutes><Profile></Profile></PrivateRoutes>
+      }
     ],
   },
 ]);

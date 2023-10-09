@@ -113,10 +113,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a>Settings</a>
+                <Link to={'/profile'}>Profile</Link>
+              </li>
+              <li>
+                <Link to={'/dashboard'}>Dashboard</Link>
               </li>
               <li onClick={handleSignOut}>
-                <a>Logout</a>
+                <Link>Logout</Link>
               </li>
             </ul>
           </div>
