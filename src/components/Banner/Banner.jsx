@@ -1,11 +1,18 @@
 import "./Banner.css";
 import {   FaProjectDiagram, FaMapPin, FaMicrophone } from "react-icons/fa";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Banner = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <div className="hero min-h-screen banner-section">
+    <div  className="hero min-h-screen banner-section">
       <div className=" grid lg:grid-cols-3 grid-cols-1 items-center gap-5 max-w-screen-xl mx-auto">
-        <div className="banner-content lg:col-span-2 justify-center lg:justify-normal text-center lg:text-left md:text-left mt-10 lg:mt-0 md:mt-0">
+        <div data-aos="fade-right" className="banner-content lg:col-span-2 justify-center lg:justify-normal text-center lg:text-left md:text-left mt-10 lg:mt-0 md:mt-0">
           <h5 className="text-xl font-semibold color-primary">
             January 21, 2023
           </h5>

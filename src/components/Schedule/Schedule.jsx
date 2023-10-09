@@ -1,10 +1,17 @@
 import { FaCheck } from "react-icons/fa";
 import "./Schedule.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Schedule = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <div className="mt-20 max-w-screen-xl mx-auto text-center px-5">
+    <div data-aos="fade-right" className="mt-20 max-w-screen-xl mx-auto text-center px-5">
       <h4 className="color-primary font-semibold text-xl">Schedule</h4>
       <h1 className="title1 text-3xl font-bold lg:text-4xl md:text-4xl">
         RECENT EVENT SCHEDULE

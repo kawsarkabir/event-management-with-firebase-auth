@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
 import { FaProjectDiagram } from "react-icons/fa";
 import PropTypes from "prop-types";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Events = ({ events }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const { img, id, title, price, seat, publish_date, location } = events
   return (
-    <div>
+    <div data-aos="fade-left">
       <div className="max-w-sm rounded-lg shadow  ">
         <Link>
           <img className="rounded-t-lg" src={img} alt="" />

@@ -3,8 +3,10 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { toast } from "react-toastify";
 import { FaGoogle } from "react-icons/fa";
+ 
 
 const Login = () => {
+   
   const location = useLocation();
   const navigate = useNavigate();
   const { signIn, logInWithGoogle } = useContext(AuthContext);
@@ -39,7 +41,7 @@ const Login = () => {
   };
   return (
     <div>
-      <div className="hero min-h-screen">
+      <div  className="hero min-h-screen">
         <div className="hero-content flex-col  ">
           <div className="text-center ">
             <h1 className="text-5xl font-bold">Login now!</h1>

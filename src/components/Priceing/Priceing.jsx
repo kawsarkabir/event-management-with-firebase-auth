@@ -1,9 +1,16 @@
 import "./Priceing.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Priceing = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <>
-      <div>
+    <div data-aos="fade-up">
+      <div >
         <h4 className="color-primary text-center mt-20 font-semibold">
           Ticket Plan
         </h4>
@@ -199,7 +206,7 @@ const Priceing = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
